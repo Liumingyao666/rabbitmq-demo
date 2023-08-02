@@ -40,4 +40,13 @@ public class SpringAmqpTest {
         String message = "hello, everyone!";
         rabbitTemplate.convertAndSend(exchangeName, "", message);
     }
+
+    @Test
+    public void testDirectExchange() {
+        // 队列名称
+        String exchangeName = "itcast.direct";
+        // 消息
+        String message = "hello, blue!";
+        rabbitTemplate.convertAndSend(exchangeName, "blue", message);
+    }
 }
