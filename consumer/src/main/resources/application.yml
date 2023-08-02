@@ -8,3 +8,6 @@ spring:
     virtualHost: / #虚拟主机
     username: itcast #用户名
     password: 123321 #密码
+    listener:
+      simple:
+        prefetch: 1 #每次只获取一条消息，处理完成才获取下一条
