@@ -1,3 +1,10 @@
 logging:
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    host: 192.168.163.130 #主机名
+    port: 5672  #端口
+    virtualHost: / #虚拟主机
+    username: itcast #用户名
+    password: 123321 #密码
